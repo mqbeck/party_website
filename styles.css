@@ -1,1 +1,291 @@
+.grid-container
+{
+  display: grid;
+  grid-template-columns: minmax(auto, 75px) minmax(100px, 3fr) minmax(100px, 3fr);
+  grid-template-rows: 0.1fr 0.1fr minmax(150px, 300px) minmax(150px, 300px) 0.1fr;
+  gap: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-top: 5;
+  //background: #2a0a40;
+  grid-template-areas:
+    "title title title"
+	 "nav vision vision"
+    "nav issues map"
+	 "nav plan money"
+	 "nav etc etc"
+    "nav copyright copyright";
+}
 
+.grid-container > div
+{
+  padding: 10px 5px;
+  position: sticky;
+  //background-color: #550099;
+  background: #2a0a50;
+  background: #21261E;
+}
+
+.office_grid 
+{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(33px, 1fr));
+  grid-template-rows: minmax(20px, 30px) auto;
+  background-color: #2a0a50;
+  background: #21261E;
+  align-self: start;
+  justify-self: center;
+  gap: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  grid-template-areas:
+    "local state national"
+	 "local_office state_office   national_office";
+}
+
+.office_grid > div
+{
+  background-color: #2a0a50;
+  margin: 5px;
+  padding: 10px;
+  font-size: 15px;
+  background: #21261E;
+  //justify-self: center;
+  //justify-items: center;
+  align-self: start;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#candidates
+{
+  text_align: center;
+  text_decoration: underline;
+  //background: black;
+  align-self: center;
+  justify-self: center;
+}
+
+.state, .local, .national
+{
+  text-decoration: underline;
+  font-size: 18px;
+  //justify-self: center;
+}
+
+
+.title
+{
+  position: fixed;
+  top: 00px;
+  bottom: 20px;
+  z-index: 2;
+  grid-area: title;
+  background: #2a0a40;
+}
+
+.nav
+{
+  grid-row: 2 / span 5;
+  grid-column: 1 / 1;
+  position: fixed;
+  top: 20px;
+  z-index: 1;
+  grid-area: nav;
+  overflow: scroll;
+}
+
+.vision
+{
+  grid-area: vision;
+  content-align: center;
+}
+
+.issues
+{
+  grid-area: issues;
+  line-height: 1;
+}
+
+.plan
+{
+  grid-area: plan;
+  line-height: 1;
+}
+
+.money
+{
+  grid-area: money;
+  line-height: 1;
+}
+
+.map
+{
+  grid-area: map;
+  align-self: center;
+  justify-self: center;
+  z-index:-1;
+  transform: scale(0.45);
+}
+
+.etc
+{
+  grid-area: etc;
+  content-align: center;
+}
+
+.local
+{
+  grid-area: local;
+  content-align: center;
+}
+
+.local_office
+{
+  grid-area: local_office;
+  content-align: center;
+}
+
+.state
+{
+  grid-area: state;
+  content-align: center;
+}
+
+.state_office
+{
+  grid-area: state_office;
+  content-align: center;
+}
+
+.national
+{
+  grid-area: national;
+  content-align: center;
+}
+
+.national_office
+{
+  grid-area: national_office;
+  content-align: center;
+}
+
+.copyright
+{
+  grid-area: copyright;
+  text-align: center;
+}
+
+body
+{
+  //background-image: url("Blank_US_Map_(states_only).svg");
+  font-family: "Helvetica";
+  padding: 20px;
+  //background: #1e1e36;
+  background-color: #2a0a40;
+  //background-color: #bffaff;
+  
+  color: #FB8541;
+}
+
+#partyName
+{
+  font-size: 60px;
+  font-family: Times;
+  text-align: center;
+  font-family: "Helvetica";
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#tagline
+{
+	font-style: oblique;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+#summary
+{
+	font-size: 25px;
+	text-align: left;
+}
+
+#usMap
+{
+	//transform: scale(0.7. 0.7);
+	//transform: scale(0.1);
+	margin: 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+#icon
+{
+	transform: scale(0.7. 0.7);
+	transform: scale(0.15);
+	margin: 0;
+	border-radius: 4px;
+}
+
+#partyIssues, #process, #pay, #states
+{
+	font-weight: 900;
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.state
+{
+	font-size: 15px;
+}
+
+h1, p
+{
+  font-size: 40px;
+  font-family: Times;
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: normal;
+}
+
+h2
+{
+  font-size: 30px;
+  font-weight: normal;
+  font-family: Impact, serif;
+}
+
+a:link
+{
+  color: #c9ba55;
+  //background-color: red;
+}
+
+a:visited
+{
+  color: #6e631e;
+}
+
+a:hover
+{
+  color: black;
+}
+
+a:active
+{
+  color: #FB8541;
+}
+
+ul
+{
+  line-height: 1.2;
+}
+ul, li
+{
+  margin-bottom: 10px;
+}
