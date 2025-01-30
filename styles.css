@@ -12,8 +12,8 @@
   grid-template-areas:
     "title title title"
 	 "nav vision vision"
-    "nav issues map"
-	 "nav plan money"
+    "nav issues plan"
+	 "nav money map"
 	 "nav etc etc"
     "nav copyright copyright";
 }
@@ -283,9 +283,10 @@ a:active
 
 ul
 {
+  margin-bottom: 10px;
   line-height: 1.2;
 }
-ul, li
+li
 {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
