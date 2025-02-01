@@ -1,21 +1,24 @@
 .grid-container
 {
   display: grid;
-  grid-template-columns: minmax(auto, 75px) minmax(100px, 3fr) minmax(100px, 3fr);
-  grid-template-rows: 0.1fr 0.1fr minmax(150px, 300px) minmax(150px, 300px) 0.1fr;
+  grid-template-columns: minmax(60px, 75px) minmax(auto, 1700px);
+  //grid-template-rows: 0.1fr 0.1fr minmax(150px, 300px) minmax(150px, 300px) 0.1fr;
   gap: 5px;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-right: 10px;
   padding-bottom: 0;
-  padding-top: 5;
+  padding-top: 5px;
   //background: #2a0a40;
   grid-template-areas:
-    "title title title"
-	 "nav vision vision"
-    "nav issues plan"
-	 "nav money map"
-	 "nav etc etc"
-    "nav copyright copyright";
+	"title title"
+	"nav vision"
+	"nav issues"
+	"nav plan"
+	"nav money"
+	"nav map"
+	"nav etc"
+	"nav copyright";
+	justify-content: center;
 }
 
 .grid-container > div
@@ -93,9 +96,11 @@
   grid-column: 1 / 1;
   position: fixed;
   top: 20px;
+  //margin-left: 15px;
   z-index: 1;
   grid-area: nav;
-  overflow: scroll;
+  overflow: auto;
+  justify-items: right;
 }
 
 .vision
@@ -128,7 +133,9 @@
   align-self: center;
   justify-self: center;
   z-index:-1;
-  transform: scale(0.45);
+  //transform: scale(0.45);
+  max-height: 100%;
+  width: auto;
 }
 
 .etc
@@ -268,7 +275,9 @@ a:link
 
 a:visited
 {
+  color: #cccc3b;
   color: #6e631e;
+  color: #a3a33b;
 }
 
 a:hover
