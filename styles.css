@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: minmax(60px, 75px) minmax(auto, 1700px);
   //grid-template-rows: 0.1fr 0.1fr minmax(150px, 300px) minmax(150px, 300px) 0.1fr;
-  gap: 5px;
+  gap: 7px;
   padding-left: 30px;
   padding-right: 10px;
   padding-bottom: 0;
@@ -29,15 +29,15 @@
   //background-color: #550099;
   background: #2a0a50;
   background: #21261E;
+  background: #7a9e9f;
+  background: #D1F1F1;
 }
 
 .office_grid 
 {
   display: grid;
   grid-template-columns: repeat(3, minmax(33px, 1fr));
-  grid-template-rows: minmax(20px, 30px) auto;
-  background-color: #2a0a50;
-  background: #21261E;
+  grid-template-rows: auto auto;
   align-self: start;
   justify-self: center;
   gap: 0px;
@@ -46,22 +46,28 @@
   grid-template-areas:
     "local state national"
 	 "local_office state_office   national_office";
+  //background-color: #2a0a50;
+  //background: #21261E;
+  background: #7a9e9f;
+  background: #D1F1F1;
 }
 
 .office_grid > div
 {
-  background-color: #2a0a50;
   margin: 5px;
   padding: 10px;
   font-size: 15px;
-  background: #21261E;
   //justify-self: center;
   //justify-items: center;
   align-self: start;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   padding-top: 0;
+  //background-color: #2a0a50;
+  //background: #21261E;
+  background: #7a9e9f;
+  background: #D1F1F1;
 }
 
 #candidates
@@ -193,10 +199,12 @@ body
   font-family: "Helvetica";
   padding: 20px;
   //background: #1e1e36;
-  background-color: #2a0a40;
-  //background-color: #bffaff;
+  //background-color: #2a0a40;
+  background-color: #bffaff;
+  background-color: #b8d8d8;
   
   color: #FB8541;
+  color: #1e1e36;
 }
 
 #partyName
@@ -272,6 +280,8 @@ a:link
 {
   color: #c9ba55;
   //background-color: red;
+  color: #3728A8;
+  color: ##1800CC;
 }
 
 a:visited
@@ -279,17 +289,18 @@ a:visited
   color: #cccc3b;
   color: #6e631e;
   color: #a3a33b;
+  color: #192025;
 }
 
 a:hover
 {
-  color: black;
-  color: white;
+  color: #90323d;
 }
 
 a:active
 {
   color: #FB8541;
+  
 }
 
 ul
@@ -300,4 +311,20 @@ ul
 li
 {
   margin-bottom: 7px;
+}
+
+#partyName, #partyIssues, #process, #pay
+{
+  color: grey;
+  color: #FB8541;
+}
+
+body
+{
+  background-color: #b8d8d8;
+  color: #90233d;
+  color: #1e1e36;
+  background-color: #1e1e36;
+  background: #7a9e9f;
+  
 }

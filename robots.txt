@@ -1,4 +1,4 @@
  User-agent: *
 Disallow: 
 
-Sitemap: https://nuclearpower.party/"sitemap.xml
+Sitemap: https://nuclearpowerparty.com/sitemap.xml
