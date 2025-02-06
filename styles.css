@@ -284,6 +284,7 @@ a:visited
 a:hover
 {
   color: black;
+  color: white;
 }
 
 a:active
