@@ -3,10 +3,10 @@
   <title>Blank map of the United States, territories not included</title>
 <defs>
 <style type="text/css">
-.state {fill:#D0D0D0}                        /* default color for all states not specified below */
-.borders {stroke:#FFFFFF; stroke-width:1}    /* color and width of borders between states */
+.state {fill:#D0D0D0; fill: #7a9e9f;}                        /* default color for all states not specified below */
+.borders {stroke:#FFFFFF; stroke-width:1; stroke: #1e1e36;}    /* color and width of borders between states */
 .dccircle {display:yes}                      /* set display to yes to show the circle for the District of Columbia, or none to hide it */
-.separator1 {stroke:#B0B0B0; stroke-width:2} /* color and width of lines around Alaska and Hawaii */
+.separator1 {stroke:#B0B0B0; stroke-width:2; stroke: #1e1e36;} /* color and width of lines around Alaska and Hawaii */
 
 /* Individual states can be colored as follows:
 .ks,.mt,.pa {fill:#0000FF}
@@ -18,7 +18,7 @@ Place this code in the empty space below. */
 // .nv{fill : green}
 
 /* Write-In states*/
-.az, .ar, .ca, .co, .ct, .de, .fl, .ga, .id, .il, .in, .ia, .ks, .ky, .la, .me, .md, .ma, .mi, .mn, .mo, .mt, .ne, .nh, .nj, .ny, .nc, .nd, .oh, .or, .pa, .ri, .tn, .tx, .ut, .vt, .va, .wa, .wv, .wi, .wy {fill : #ebc334; fill: #FB8541}
+.az, .ar, .ca, .co, .ct, .de, .fl, .ga, .id, .il, .in, .ia, .ks, .ky, .la, .me, .md, .ma, .mi, .mn, .mo, .mt, .ne, .nh, .nj, .ny, .nc, .nd, .oh, .or, .pa, .ri, .tn, .tx, .ut, .vt, .va, .wa, .wv, .wi, .wy {fill : #ebc334; fill: #FB8541; fill: #90233d}
 
 /* Nuclear friendly states */
  //.pa, .fl, .nh, .sc, .il, .ca, .ct, .ma, .ms, .mn, .nj, .ny, .or, .ri, .vt{fill : #03dbfc}
