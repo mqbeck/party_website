@@ -5,12 +5,16 @@
 	<title>Nuclear Power Party</title>
 	<link href="styles.css" rel="stylesheet"/>
 	<link rel="icon" href="icon_thick.ico">
+	<script defer src="jsScripts.js"></script>
 </head>
 
 <body>
+	<button id="darkMode" type="button" onclick="setDark()">Set Dark</button>
+	<button id="lightMode" type="button" onclick="setLight()">Set Light</button>
+
 <div class="grid-container">
 	<div class="title">
-		<p id="partyName">Nuclear Power Party</p>
+	<p id="partyName">Nuclear Power Party</p>
 		<p id="tagline">Powering America with policy</p>
 	</div>
 	
@@ -147,7 +151,7 @@
 		<div class="etc">
 		<section>
 			<h3 id="candidates"><a href="https://tminstituteldf.org/local-elections/">Candidate Offices</a></h3>
-			<div class="office_grid">
+			<div class="office_grid" id="office_grid">
 				<div class="local">Local</div>
 					<div class="local_office">
 						<div>School Boards</div>

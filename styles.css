@@ -31,6 +31,7 @@
   background: #21261E;
   background: #7a9e9f;
   background: #D1F1F1;
+  border-radius: 5px;
 }
 
 .office_grid 
@@ -330,5 +331,64 @@ body
   color: #1e1e36;
   background-color: #1e1e36;
   background: #7a9e9f;
-  
+}
+
+#darkMode
+{
+	background-color: #252f30;
+	color: white;
+}
+#lightMode
+{
+	background-color: #d1f1f1;
+	color: #021026;
+}
+
+@media (prefers-color-scheme: dark)
+{
+	a:link
+	{
+	  color: #21cbed;
+	}
+
+	a:visited
+	{
+	  color: #3da8d1;
+	}
+
+	a:hover
+	{
+	  color: #10c4a6;
+	}
+
+	a:active
+	{
+	  color: #7a9e9f;;
+	  
+	}
+	
+	#partyName, #partyIssues, #process, #pay
+	{
+		color: #66d176;
+	}
+	
+	body
+	{
+		background: #252f30;
+		color: white;
+	}
+	
+	.grid-container > div
+	{
+		background: #11121c;
+	}
+	.office_grid > div
+	{
+		background: #11121c;
+	}
+	
+	.office_grid
+	{
+		background: #11121c;
+	}
 }
