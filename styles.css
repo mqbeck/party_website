@@ -140,10 +140,10 @@
   grid-area: map;
   align-self: center;
   justify-self: center;
-  z-index:-1;
   //transform: scale(0.45);
   max-height: 100%;
   width: auto;
+  z-index: 1;
 }
 
 .etc
@@ -276,7 +276,10 @@ h2
   font-weight: normal;
   font-family: Impact, serif;
 }
-
+a
+{
+	z-index:5;
+}
 a:link
 {
   color: #c9ba55;
@@ -291,6 +294,7 @@ a:visited
   color: #6e631e;
   color: #a3a33b;
   color: #192025;
+  color: #1d5e73;
 }
 
 a:hover
@@ -392,3 +396,61 @@ body
 		background: #11121c;
 	}
 }
+
+.mapStates
+{
+	fill: #D0D0D0;
+	fill: #7a9e9f;	
+}                        
+
+/* default color for all states not specified below */
+.borders
+{
+	stroke:#FFFFFF;
+	stroke-width:1;
+	stroke: #1e1e36;
+}/* color and width of borders between states */
+
+.dccircle
+{
+	display:yes
+}/* set display to yes to show the circle for the District of Columbia, or none to hide it */
+
+.separator1
+{
+	stroke:#B0B0B0;
+	stroke-width:2;
+	stroke: #1e1e36;
+}/* color and width of lines around Alaska and Hawaii */
+
+/* Individual states can be colored as follows:
+.ks,.mt,.pa {fill:#0000FF}
+.ca,.de {fill:#FF0000}
+In this example, Kansas, Montana and Pennsylvania are colored blue, and California and Delaware are colored red.
+Place this code in the empty space below. */
+
+/* Target states */
+// .nv{fill : green}
+
+/* Write-In states
+.az, .ar, .ca, .co, .ct, .de, .fl, .ga, .id, .il, .in, .ia, .ks, .ky, .la, .me, .md, .ma, .mi, .mn, .mo, .mt, .ne, .nh, .nj, .ny, .nc, .nd, .oh, .or, .pa, .ri, .tn, .tx, .ut, .vt, .va, .wa, .wv, .wi, .wy
+{
+	fill : #ebc334;
+	fill: #FB8541;
+	fill: #90233d;
+}
+
+/* Nuclear friendly states 
+ //.pa, .fl, .nh, .sc, .il, .ca, .ct, .ma, .ms, .mn, .nj, .ny, .or, .ri, .vt
+{
+	fill : #03dbfc;
+}
+*/
+
+/* All states */
+.al, .ak, .az, .ar, .ca, .co, .ct, .de, .fl, .ga, .hi, .id, .il, .in, .ia, .ks, .ky, .la, .me, .md, .ma, .mi, .mn, .ms, .mo, .mt, .ne, .nv, .nh, .nj, .nm, .ny, .nc, .nd, .oh, .ok, .or, .pa, .ri, .sc, .sd, .tn, .tx, .ut, .vt, .va, .wa, .wv, .wi, .wy
+{
+	fill: currentColor;
+	transition: color 1s;
+}
+	

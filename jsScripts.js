@@ -4,6 +4,18 @@ if(localStorage.getItem('dark_mode') === 'enabled')
 	setDark();
 }
 
+// highlight the current state
+let path = window.location.pathname;
+let fileName = path.substring(path.lastIndexOf('/') + 1);
+
+if (!fileName.includes("index"))
+{
+	let state = fileName.slice(0,2);
+   
+	// highlight the state
+	document.getElementById(state).style.fill = "#90233d";
+}
+
 function setDark()
 {
 	const mainBackground = "#252f30"; // lighter/greener dark grey
