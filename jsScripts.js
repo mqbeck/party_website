@@ -4,6 +4,41 @@ if(localStorage.getItem('dark_mode') === 'enabled')
 	setDark();
 }
 
+function includeHTML()
+{
+	//loop through a collection of all HTML elements:
+	var allElements = document.getElementsByTagName("*");
+	for (i = 0; i < allElements.length; i++)
+	{
+		var element = allElements[i];
+
+		//search for elements with a certain attribute:
+		var file = element.getAttribute("include-html");
+		if (file)
+		{
+			//make an HTTP request using the attribute value as the file name:
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function()
+			{
+				if (this.readyState == 4)
+				{
+					if (this.status == 200) {element.innerHTML = this.responseText;}
+					if (this.status == 404) {element.innerHTML = "Page not found.";}
+
+					//remove the attribute, and call this function once more:
+					element.removeAttribute("include-html");
+					includeHTML();
+				}
+			}      
+			xhttp.open("GET", file, true);
+			xhttp.send();
+			//exit the function:
+			return;
+		}
+	}
+}
+
+
 // highlight the current state
 let path = window.location.pathname;
 let fileName = path.substring(path.lastIndexOf('/') + 1);
